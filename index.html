@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crónicas de Perfummia - Killer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;500;700;800&family=Playfair+Display:ital,wght@0,700;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="player-card" id="playerCard">
+        
+        <div class="left-section">
+            <div class="album-header">
+                <div class="tag">Podcast</div>
+                <i class="fa-regular fa-heart" style="color: white; cursor: pointer;"></i>
+            </div>
+
+            <div class="art-content">
+                <i class="fa-solid fa-flask big-icon"></i>
+                <h1 class="main-title">KILLER</h1>
+                <p class="subtitle">La Obsesión de Perfummia</p>
+            </div>
+            <div></div>
+        </div>
+
+        <div class="right-section">
+            
+            <div class="top-nav">
+                <div class="community-stats">
+                    <button class="follow-btn" id="followBtn">Seguir</button>
+                    <div class="stat-item">
+                        <i class="fa-solid fa-user-group"></i>
+                        <span id="followerCount">12.4k</span>
+                    </div>
+                    <div class="stat-item" style="margin-left: 10px;">
+                        <i class="fa-solid fa-headphones"></i>
+                        <span id="listenerCount">--</span>
+                    </div>
+                </div>
+
+                <div class="nav-icons">
+                    <button class="nav-btn"><i class="fa-solid fa-share-nodes"></i></button>
+                    <button class="nav-btn"><i class="fa-solid fa-ellipsis"></i></button>
+                </div>
+            </div>
+
+            <div class="track-info-container">
+                <span class="current-label">REPRODUCIENDO AHORA</span>
+                <h2 class="track-name" id="trackTitle">...</h2>
+                <p class="track-author">Crónicas de Perfummia</p>
+            </div>
+
+            <div class="visualizer-container" id="visualizer"></div>
+
+            <div class="controls-wrapper">
+                <div class="progress-area">
+                    <div class="progress-bar-bg" id="progressContainer">
+                        <div class="progress-fill" id="progressFill"></div>
+                    </div>
+                    <div class="timestamps">
+                        <span id="currentTime">00:00</span>
+                        <span id="duration">00:00</span>
+                    </div>
+                </div>
+
+                <div class="buttons-row">
+                    <button class="control-btn"><i class="fa-solid fa-shuffle"></i></button>
+                    <button class="control-btn" id="prevBtn"><i class="fa-solid fa-backward-step"></i></button>
+                    <button class="play-btn-main" id="playBtn"><i class="fa-solid fa-play"></i></button>
+                    <button class="control-btn" id="nextBtn"><i class="fa-solid fa-forward-step"></i></button>
+                    <button class="control-btn"><i class="fa-solid fa-repeat"></i></button>
+                </div>
+            </div>
+
+            <div class="tabs-header">
+                <div class="tab-title active">Episodios</div>
+            </div>
+
+            <div class="playlist-container" id="playlistContainer"></div>
+
+            <div class="comments-section">
+                <div class="comments-header">Comentarios del Podcast</div>
+                
+                <div class="comment-input-box">
+                    <input type="text" class="comment-input" id="commentInput" placeholder="Escribe tu opinión sobre Killer...">
+                    <button class="btn-send" id="sendCommentBtn">ENVIAR</button>
+                </div>
+
+                <div class="comments-list" id="commentsList">
+                    <div class="comment-item">
+                        <span class="comment-user">@fan_perfummia</span>
+                        <span class="comment-time">Hace 2h</span>
+                        <span class="comment-text">¡Increíble la historia de Killer! No sabía que el líquido prohibido era tan peligroso. 😱</span>
+                    </div>
+                    <div class="comment-item">
+                        <span class="comment-user">@rose_hater</span>
+                        <span class="comment-time">Hace 5h</span>
+                        <span class="comment-text">Rose siempre me dio mala espina, qué traición más vil.</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    
+</body>
+<script src="script.js"></script>
+</html>
